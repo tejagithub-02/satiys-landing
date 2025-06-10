@@ -1,0 +1,6 @@
+<svg width="200" height="30" xmlns="http://www.w3.org/2000/svg">
+  <text x="0" y="20" font-family="Arial, sans-serif" font-size="20">
+    <tspan fill="white">TRY</tspan>
+    <tspan fill="#FF4035">  ALL</tspan>
+  </text>
+</svg>
