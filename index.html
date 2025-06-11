@@ -1068,8 +1068,10 @@
 </div>
 
 
+
+
 <script>
-// Enhanced Continuous Auto-Scrolling Carousel
+// Enhanced Continuous Auto-Scrolling Carousel with Better Hover Control
 document.addEventListener('DOMContentLoaded', function() {
    const categoryList = document.getElementById('category-list');
    const cards = document.querySelectorAll('.category-card');
@@ -1077,18 +1079,17 @@ document.addEventListener('DOMContentLoaded', function() {
    let isScrolling = true;
    let animationId;
    const scrollSpeed = 1; // Adjust speed (1-3 recommended)
+   let isMouseOver = false;
 
-   // Clone cards for seamless infinite loop (preserves all original styling)
+   // Clone cards for seamless infinite loop
    function cloneCards() {
        const containerWidth = categoryList.offsetWidth;
        let totalWidth = 0;
        
-       // Calculate total width of original cards
        cards.forEach(card => {
            totalWidth += card.offsetWidth + parseInt(window.getComputedStyle(card).marginRight);
        });
        
-       // Clone enough cards to fill at least 2x container width
        const clonesNeeded = Math.ceil((containerWidth * 2) / totalWidth);
        for (let i = 0; i < clonesNeeded; i++) {
            cards.forEach(card => {
@@ -1100,12 +1101,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
    // Continuous scroll animation
    function autoScroll() {
-       if (!isScrolling) return;
+       if (!isScrolling || isMouseOver) {
+           animationId = requestAnimationFrame(autoScroll);
+           return;
+       }
        
        scrollPosition += scrollSpeed;
        categoryList.scrollLeft = scrollPosition;
        
-       // Reset to start when reaching halfway point
        if (scrollPosition >= categoryList.scrollWidth / 2) {
            scrollPosition = 0;
            categoryList.scrollLeft = 0;
@@ -1116,15 +1119,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
    // Pause/resume functionality
    function setupEventListeners() {
-       // Pause when mouse enters any card or the list
-       document.querySelectorAll('.category-card, .category-list').forEach(el => {
-           el.addEventListener('mouseenter', () => {
-               isScrolling = false;
+       // Track mouse enter/leave for the entire container
+       categoryList.addEventListener('mouseenter', () => {
+           isMouseOver = true;
+       });
+       
+       categoryList.addEventListener('mouseleave', () => {
+           isMouseOver = false;
+           if (!animationId && isScrolling) autoScroll();
+       });
+       
+       // Also track individual cards for better UX
+       document.querySelectorAll('.category-card').forEach(card => {
+           card.addEventListener('mouseenter', () => {
+               isMouseOver = true;
            });
            
-           el.addEventListener('mouseleave', () => {
-               isScrolling = true;
-               if (!animationId) autoScroll();
+           card.addEventListener('mouseleave', (e) => {
+               // Check if we're still inside the container
+               if (!categoryList.contains(e.relatedTarget)) {
+                   isMouseOver = false;
+                   if (!animationId && isScrolling) autoScroll();
+               }
            });
        });
        
@@ -1151,10 +1167,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
    // Clean up when leaving page
    window.addEventListener('beforeunload', () => {
-       cancelAnimationFrame(animationId);
+       if (animationId) cancelAnimationFrame(animationId);
    });
 });
+
 </script>
+
 
 <style>
 /* Preserve all your original styling */
