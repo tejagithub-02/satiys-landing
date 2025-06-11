@@ -10,12 +10,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="namespace-it">
-    <meta name="description" content="EcomArts - Multipurpose Ecommerce HTML Template">
+    <meta name="description" content="SATIYS - Multipurpose Ecommerce HTML Template">
     <link rel="icon" href="assets/images/Logo.png" type="image/x-icon">
     <!-- ======== Page title ============ -->
-    <title>EcomArts - Multipurpose Ecommerce HTML Template</title>
+    <title>SATIYS - Multipurpose Ecommerce HTML Template</title>
     <!--<< Favcion >>-->
     <link rel="shortcut icon" href="assets/images/favicon.png">
+   
     <!--<< Bootstrap min.css >>-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!--<< All Min Css >>-->
@@ -331,7 +332,7 @@
                               </ul>
                               <h6>(2 customer reviews)</h6>
                            </div>
-                           <h6 class="product-price">$99.00</h6>
+                           <h6 class="product-price">₹500.00</h6>
                            <h2 class="product-title">
                               High-Neck puff jacket
                            </h2>
@@ -773,24 +774,14 @@ function resetForm() {
                     <div class="col-lg-6">
                         <h2 class="h4 mb-4 fw-bold">Billing Details</h2>
                         <div class="row">
-                            <div class="col-12 form-group">
-                                <select class="single-select w-100 mb-3">
-                                    <option>United Kingdom (UK)</option>
-                                    <option>United State (US)</option>
-                                    <option>Equatorial Guinea (GQ)</option>
-                                    <option>Australia (AU)</option>
-                                    <option>Germany (DE)</option>
-                                </select>
-                            </div>
+                            
                             <div class="col-md-6 form-group">
                                 <input type="text" class="form-control" placeholder="First Name">
                             </div>
                             <div class="col-md-6 form-group">
                                 <input type="text" class="form-control" placeholder="Last Name">
                             </div>
-                            <div class="col-12 form-group">
-                                <input type="text" class="form-control" placeholder="Your Company Name">
-                            </div>
+                          
                             <div class="col-12 form-group">
                                 <input type="text" class="form-control" placeholder="Street Address">
                                 <input type="text" class="form-control"
@@ -826,24 +817,14 @@ function resetForm() {
                         </p>
                         <div class="shipping_address mt-1">
                             <div class="row">
-                                <div class="col-12 form-group">
-                                    <select class="single-select w-100 mb-3">
-                                        <option>United Kingdom (UK)</option>
-                                        <option>United State (US)</option>
-                                        <option>Equatorial Guinea (GQ)</option>
-                                        <option>Australia (AU)</option>
-                                        <option>Germany (DE)</option>
-                                    </select>
-                                </div>
+                               
                                 <div class="col-md-6 form-group">
                                     <input type="text" class="form-control" placeholder="First Name">
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <input type="text" class="form-control" placeholder="Last Name">
                                 </div>
-                                <div class="col-12 form-group">
-                                    <input type="text" class="form-control" placeholder="Your Company Name">
-                                </div>
+                               
                                 <div class="col-12 form-group">
                                     <input type="text" class="form-control" placeholder="Street Address">
                                     <input type="text" class="form-control"
@@ -893,13 +874,13 @@ function resetForm() {
                                 <a class='cartname' href='https://ecomarts.baseecom.com/shop-details'>Brick Oven Pepperoni</a>
                             </td>
                             <td data-title="Price">
-                                <span class="amount"><bdi><span>$</span>281</bdi></span>
+                                <span class="amount"><bdi><span>₹</span>281</bdi></span>
                             </td>
                             <td data-title="Quantity">
                                 <strong class="product-quantity">01</strong>
                             </td>
                             <td data-title="Total">
-                                <span class="amount"><bdi><span>$</span>281</bdi></span>
+                                <span class="amount"><bdi><span>₹</span>281</bdi></span>
                             </td>
                         </tr>
                     </tbody>
@@ -908,7 +889,7 @@ function resetForm() {
                             <th>Subtotal</th>
                             <td data-title="Subtotal" colspan="4"><span
                                     class="woocommerce-Price-amount amount"><bdi><span
-                                            class="woocommerce-Price-currencySymbol">$</span>281.05</bdi></span></td>
+                                            class="woocommerce-Price-currencySymbol"₹</span>281.05</bdi></span></td>
                         </tr>
                         <tr class="woocommerce-shipping-totals shipping">
                             <th>Shipping</th>
@@ -919,63 +900,409 @@ function resetForm() {
                             <th>Total</th>
                             <td data-title="Total" colspan="4"><strong><span
                                         class="woocommerce-Price-amount amount"><bdi><span
-                                                class="woocommerce-Price-currencySymbol">$</span>281.05</bdi></span></strong>
+                                                class="woocommerce-Price-currencySymbol">₹</span>281.05</bdi></span></strong>
                             </td>
                         </tr>
                     </tfoot>
                 </table>
             </form>
             <div class="mt-lg-3 mb-30">
-                <div class="woocommerce-checkout-payment">
-                    <ul class="wc_payment_methods payment_methods methods">
-                        <li class="wc_payment_method payment_method_bacs">
-                            <input id="payment_method_bacs" type="radio" class="input-radio" name="payment_method"
-                                value="bacs" checked="checked">
-                            <label for="payment_method_bacs">Direct bank transfer</label>
-                            <div class="payment_box payment_method_bacs">
-                                <p>Make your payment directly into our bank account. Please use your Order ID as the
-                                    payment reference. Your order will not be shipped until the funds have cleared in
-                                    our account.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="wc_payment_method payment_method_cheque">
-                            <input id="payment_method_cheque" type="radio" class="input-radio" name="payment_method"
-                                value="cheque">
-                            <label for="payment_method_cheque">Cheque Payment</label>
-                            <div class="payment_box payment_method_cheque">
-                                <p>Please send a check to Store Name, Store Street, Store Town, Store State / County,
-                                    Store Postcode.</p>
-                            </div>
-                        </li>
-                        <li class="wc_payment_method payment_method_cod">
-                            <input id="payment_method_cod" type="radio" class="input-radio" name="payment_method">
-                            <label for="payment_method_cod">Credit Cart <img src="assets/images/checkout/credit_card.jpg"
-                                    alt="image"></label>
-                            <div class="payment_box payment_method_cod">
-                                <p>Pay with cash upon delivery.</p>
-                            </div>
-                        </li>
-                        <li class="wc_payment_method payment_method_paypal">
-                            <input id="payment_method_paypal" type="radio" class="input-radio" name="payment_method"
-                                value="paypal">
-                            <label for="payment_method_paypal">Paypal<img src="assets/images/checkout/paypal.jpg"
-                                    alt="PayPal acceptance mark"></label>
-                            <div class="payment_box payment_method_paypal">
-                                <p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="form-row place-order">
-                        <button type="submit" class="theme-btn">Place order</button>
-                    </div>
-                </div>
-            </div>
+               <div class="woocommerce-checkout-payment">
+                   <ul class="wc_payment_methods payment_methods methods">
+                       <!-- QR Code Payment Option -->
+                       <li class="wc_payment_method payment_method_qrcode">
+                           <input id="payment_method_qrcode" type="radio" class="input-radio" name="payment_method" value="qrcode">
+                           <label for="payment_method_qrcode">
+                               <span>QR Code Payment</span>
+                               <img src="assets/images/sample.png" alt="QR Code" class="payment-icon">
+                           </label>
+                           <div class="payment_box payment_method_qrcode" style="display:none;">
+                               <div class="qrcode-flow">
+                                   <!-- Step 1: Show QR Code -->
+                                   <div class="qrcode-step step-active" data-step="1">
+                                       <div class="qrcode-container">
+                                           <img src="assets/images/sample.png" alt="Payment QR Code" class="qrcode-image">
+                                           <div class="timer-container">
+                                               <div class="circular-timer">
+                                                   <svg class="timer-circle" viewBox="0 0 36 36">
+                                                       <path class="timer-circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                       <path class="timer-circle-fill" stroke-dasharray="100, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                   </svg>
+                                                   <span class="timer-text">2:00</span>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <p class="instruction">Scan this QR code with your mobile payment app</p>
+                                       <button class="theme-btn scan-complete-btn">I've completed payment</button>
+                                   </div>
+                                   
+                                   <!-- Step 2: Upload Proof -->
+                                   <div class="qrcode-step" data-step="2" style="display:none;">
+                                       <div class="upload-container">
+                                           <div class="upload-area" id="uploadArea">
+                                               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#cccccc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                                   <polyline points="17 8 12 3 7 8"></polyline>
+                                                   <line x1="12" y1="3" x2="12" y2="15"></line>
+                                               </svg>
+                                               <p>Upload payment confirmation screenshot</p>
+                                               <input type="file" id="paymentProof" accept="image/*" style="display:none;">
+                                           </div>
+                                           <div class="upload-preview" id="uploadPreview" style="display:none;">
+                                               <img id="previewImage" src="#" alt="Preview">
+                                               <button class="change-btn">Change Image</button>
+                                           </div>
+                                       </div>
+                                       <div class="requirements">
+                                           <p class="small-text">Requirements:</p>
+                                           <ul>
+                                               <li>Clear screenshot of successful payment</li>
+                                               <li>Must show transaction ID and amount</li>
+                                               <li>Max file size: 2MB</li>
+                                           </ul>
+                                       </div>
+                                   </div>
+                                   
+                                   <!-- Step 3: Confirmation -->
+                                   <div class="qrcode-step" data-step="3" style="display:none;">
+                                       <div class="success-message">
+                                           <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                               <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                               <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                           </svg>
+                                           <h4>Payment Received!</h4>
+                                           <p>Your order will be processed after verification</p>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </li>
+                       
+                      
+                       <!-- ... rest of your existing payment methods ... -->
+                   </ul>
+                   
+                   <div class="form-row place-order">
+                       <button type="submit" class="theme-btn" id="placeOrderBtn">Place order</button>
+                   </div>
+               </div>
+           </div>
+           
+       
+           
+        
+           
+          
         </div>
     </div>
-
-
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const qrCodeRadio = document.getElementById('payment_method_qrcode');
+          const qrCodeBox = document.querySelector('.payment_method_qrcode .payment_box');
+          const placeOrderBtn = document.getElementById('placeOrderBtn');
+          const scanCompleteBtn = document.querySelector('.scan-complete-btn');
+          const uploadArea = document.getElementById('uploadArea');
+          const uploadPreview = document.getElementById('uploadPreview');
+          const paymentProof = document.getElementById('paymentProof');
+          const previewImage = document.getElementById('previewImage');
+          const changeBtn = document.querySelector('.change-btn');
+          const timerText = document.querySelector('.timer-text');
+          const timerCircle = document.querySelector('.timer-circle-fill');
+          
+          let timerInterval;
+          let secondsLeft = 120; // 2 minutes
+          
+          // Show QR code section when selected
+          qrCodeRadio.addEventListener('change', function() {
+              if(this.checked) {
+                  qrCodeBox.style.display = 'block';
+                  startTimer();
+                  placeOrderBtn.disabled = true;
+              } else {
+                  qrCodeBox.style.display = 'none';
+                  resetFlow();
+              }
+          });
+          
+          // Start countdown timer
+          function startTimer() {
+              resetFlow();
+              showStep(1);
+              secondsLeft = 120;
+              updateTimerDisplay();
+              
+              timerInterval = setInterval(function() {
+                  secondsLeft--;
+                  updateTimerDisplay();
+                  
+                  if(secondsLeft <= 0) {
+                      clearInterval(timerInterval);
+                      // Optionally show timeout message
+                  }
+              }, 1000);
+          }
+          
+          // Update timer display
+          function updateTimerDisplay() {
+              const minutes = Math.floor(secondsLeft / 60);
+              const seconds = secondsLeft % 60;
+              timerText.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+              
+              const percentage = (secondsLeft / 120) * 100;
+              timerCircle.setAttribute('stroke-dasharray', `${percentage}, 100`);
+          }
+          
+          // Scan complete button handler
+          scanCompleteBtn.addEventListener('click', function() {
+              clearInterval(timerInterval);
+              showStep(2);
+          });
+          
+          // File upload handling
+          uploadArea.addEventListener('click', function() {
+              paymentProof.click();
+          });
+          
+          paymentProof.addEventListener('change', function(e) {
+              if(e.target.files.length > 0) {
+                  const file = e.target.files[0];
+                  
+                  // Validate file
+                  if(file.size > 2 * 1024 * 1024) {
+                      alert('File size must be less than 2MB');
+                      return;
+                  }
+                  
+                  // Show preview
+                  const reader = new FileReader();
+                  reader.onload = function(event) {
+                      previewImage.src = event.target.result;
+                      uploadArea.style.display = 'none';
+                      uploadPreview.style.display = 'block';
+                      placeOrderBtn.disabled = false;
+                  }
+                  reader.readAsDataURL(file);
+              }
+          });
+          
+          // Change image button
+          changeBtn.addEventListener('click', function() {
+              uploadArea.style.display = 'block';
+              uploadPreview.style.display = 'none';
+              paymentProof.value = '';
+              placeOrderBtn.disabled = true;
+          });
+          
+          // Show specific step in the flow
+          function showStep(stepNumber) {
+              document.querySelectorAll('.qrcode-step').forEach(step => {
+                  step.style.display = 'none';
+              });
+              document.querySelector(`.qrcode-step[data-step="${stepNumber}"]`).style.display = 'block';
+          }
+          
+          // Reset the flow
+          function resetFlow() {
+              clearInterval(timerInterval);
+              uploadArea.style.display = 'block';
+              uploadPreview.style.display = 'none';
+              paymentProof.value = '';
+          }
+          
+          // Handle form submission
+          document.querySelector('.woocommerce-cart-form').addEventListener('submit', function(e) {
+              if(qrCodeRadio.checked && !paymentProof.files[0]) {
+                  e.preventDefault();
+                  alert('Please upload payment confirmation screenshot');
+              }
+          });
+      });
+      </script>
+    <style>
+      /* QR Code Payment Specific Styles */
+      .payment_method_qrcode .payment_box {
+          padding: 20px;
+          background: #f8fafc;
+          border-radius: 8px;
+          margin-top: 10px;
+      }
+      
+      .payment-icon {
+          height: 24px;
+          margin-left: 8px;
+          vertical-align: middle;
+      }
+      
+      .qrcode-flow {
+          position: relative;
+      }
+      
+      .qrcode-step {
+          transition: all 0.3s ease;
+      }
+      
+      .qrcode-container {
+          text-align: center;
+          padding: 15px;
+          background: white;
+          border-radius: 8px;
+          box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+          margin-bottom: 20px;
+          position: relative;
+      }
+      
+      .qrcode-image {
+          width: 400px;
+          height: 200px;
+          display: block;
+          margin: 0 auto;
+          border: 1px solid #eee;
+          padding: 10px;
+          background: white;
+      }
+      
+      .instruction {
+          text-align: center;
+          color: #555;
+          margin: 15px 0;
+          font-size: 15px;
+      }
+      
+      .timer-container {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+      }
+      
+      .circular-timer {
+          width: 60px;
+          height: 60px;
+          position: relative;
+      }
+      
+      .timer-circle {
+          width: 100%;
+          height: 100%;
+          transform: rotate(-90deg);
+      }
+      
+      .timer-circle-bg {
+          fill: none;
+          stroke: #f0f0f0;
+          stroke-width: 3;
+      }
+      
+      .timer-circle-fill {
+          fill: none;
+          stroke: #4CAF50;
+          stroke-width: 3;
+          transition: stroke-dasharray 1s linear;
+      }
+      
+      .timer-text {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 12px;
+          font-weight: bold;
+          color: #555;
+      }
+      
+      .upload-container {
+          margin: 20px 0;
+      }
+      
+      .upload-area {
+          border: 2px dashed #ddd;
+          border-radius: 8px;
+          padding: 30px;
+          text-align: center;
+          cursor: pointer;
+          transition: all 0.3s;
+      }
+      
+      .upload-area:hover {
+          border-color: #aaa;
+          background: #f9f9f9;
+      }
+      
+      .upload-area p {
+          margin-top: 10px;
+          color: #777;
+      }
+      
+      .upload-preview {
+          position: relative;
+          text-align: center;
+          margin-top: 15px;
+      }
+      
+      #previewImage {
+          max-width: 100%;
+          max-height: 200px;
+          border-radius: 4px;
+          border: 1px solid #eee;
+      }
+      
+      .change-btn {
+          background: #f0f0f0;
+          border: none;
+          padding: 5px 10px;
+          border-radius: 4px;
+          margin-top: 10px;
+          cursor: pointer;
+          font-size: 13px;
+      }
+      
+      .requirements {
+          background: #f8f8f8;
+          padding: 15px;
+          border-radius: 8px;
+          margin-top: 20px;
+      }
+      
+      .requirements ul {
+          margin: 10px 0 0 20px;
+          padding: 0;
+          font-size: 13px;
+          color: #666;
+      }
+      
+      .small-text {
+          font-size: 13px;
+          margin-bottom: 5px;
+          color: #555;
+      }
+      
+      .success-message {
+          text-align: center;
+          padding: 20px;
+      }
+      
+      .success-message h4 {
+          color: #4CAF50;
+          margin: 15px 0 5px;
+      }
+      
+      .success-message p {
+          color: #666;
+      }
+      
+      .scan-complete-btn {
+          display: block;
+          width: 100%;
+          margin-top: 15px;
+      }
+      
+      /* Disabled state for place order button */
+      #placeOrderBtn[disabled] {
+          opacity: 0.7;
+          cursor: not-allowed;
+          background-color: #ccc !important;
+      }
+      </style>
  <!-- Footer Section start -->
 <footer class="footer-section bg-title">
    <div class="footer-widgets-wrapper">
@@ -1147,5 +1474,5 @@ function resetForm() {
 </body>
 
 
-<!-- Mirrored from ecomarts.baseecom.com/main-file/checkout.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 09 May 2025 05:59:02 GMT -->
+
 </html>
